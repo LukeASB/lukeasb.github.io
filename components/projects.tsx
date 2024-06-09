@@ -8,7 +8,7 @@ const Project: React.FC = () => {
                 <p>Projects...</p>
             </section>
         </div>
-    )
+    );
 }
 
 export default Project;
