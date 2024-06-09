@@ -1,6 +1,7 @@
 import About from "../about";
 import Education from "../education";
 import Employment from "../employment";
+import Project from "../projects";
 
 const Home: React.FC = () => {
     return (
@@ -10,6 +11,7 @@ const Home: React.FC = () => {
                 <About />
                 <Employment />
                 <Education />
+                <Project />
             </div>
         </div>
     );
