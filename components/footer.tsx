@@ -5,20 +5,28 @@ const Footer: React.FC = () => {
             <div className="container text-center">
                 <div className="mb-3">
                     <a
-                        href="https://www.youtube.com/channel/UClCbqNlDf08fv_OJbkPDa_w"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-light me-3"
-                    >
-                        <i className="fab fa-youtube fa-2x"></i>
-                    </a>
-                    <a
                         href="https://www.linkedin.com/in/luke-sloane-bulger/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-light"
+                        className="text-light me-1"
                     >
                         <i className="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a
+                        href="https://medium.com/@luke.sloanebulger"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-light me-1"
+                    >
+                        <i className="fab fa-medium fa-2x"></i>
+                    </a>
+                    <a
+                        href="https://github.com/LukeASB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-light me-1"
+                    >
+                        <i className="fab fa-github fa-2x"></i>
                     </a>
                 </div>
                 <span className="text-light">© Luke Sloane-Bulger</span>
