@@ -1,6 +1,5 @@
 import About from "../about";
-import Education from "../education";
-import Employment from "../employment";
+import History from "../history";
 import Project from "../projects";
 
 const Home: React.FC = () => {
@@ -9,8 +8,7 @@ const Home: React.FC = () => {
             {/* <!-- Body Content --> */}
             <div className="container content">
                 <About />
-                <Employment />
-                <Education />
+                <History />
                 <Project />
             </div>
         </div>
