@@ -1,3 +1,5 @@
+import CardView from "./card/cardView";
+
 const Project: React.FC = () => {
     return (
         <div id="project">
@@ -5,19 +7,7 @@ const Project: React.FC = () => {
                 <div className="row text-center">
                     <h1>Projects</h1>
                 </div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-2 mb-2">
-                            <div className="card">
-                                <img src="https://via.placeholder.com/200" className="card-img-top" alt="Project 1" />
-                                <div className="card-body">
-                                    <h5 className="card-title">Project 1</h5>
-                                    <a href="#" className="btn btn-primary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <CardView />
             </section>
         </div>
     );
