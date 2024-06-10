@@ -1,7 +1,7 @@
 interface IEntry {
     title: string,
     date: string,
-    description: string
+    description: JSX.Element
 }
 
 export default IEntry;

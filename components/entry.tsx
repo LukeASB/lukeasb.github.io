@@ -5,7 +5,7 @@ const Entry: React.FC<IEntry> = (entry: IEntry) => {
         <div className="entry mb-4">
             <h5 className="fw-bold">{entry.title}</h5>
             <p className="text small">{entry.date}</p>
-            <p>{entry.description}</p>
+            {entry.description}
         </div>
     )
 }
