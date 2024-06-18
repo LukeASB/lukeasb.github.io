@@ -404,7 +404,7 @@ const projects: ICard[] = [
           <p><strong>Tech Stack: </strong>JavaScript, TypeScript, NodeJS, ReactJS, PHP, SQL and MongoDB. Used
           Microsoft Azure and Docker.</p>
           <p>Worked on a number of small/large projects during my time at RedEye. Some of which include:</p>
-          {redeyeModalContent.map((content) => <ModalContent content={content}/>)}
+          {redeyeModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content}/>)}
         </div>
       ),
     },
@@ -460,7 +460,7 @@ const projects: ICard[] = [
         <div>
           <p><strong>Tech Stack: </strong>HTML(5), CSS, JavaScript and PHP.</p>
           <p>Worked on a number of small/large projects during my time at KeeleSU:</p>
-          {keelesuModalContent.map((content) => <ModalContent content={content} />)}
+          {keelesuModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
         </div>
       ),
     },
