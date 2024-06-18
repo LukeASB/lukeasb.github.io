@@ -1,6 +1,7 @@
 import About from "../about";
 import History from "../history";
-import Project from "../projects";
+import SideProjects from "../sideProjects";
+import WorkProjects from "../workProjects";
 
 const Home: React.FC = () => {
   return (
@@ -9,7 +10,8 @@ const Home: React.FC = () => {
       <div className="container content">
         <About />
         <History />
-        <Project />
+        <WorkProjects />
+        <SideProjects />
       </div>
     </div>
   );
