@@ -1,6 +1,27 @@
+import Link from "next/link";
 import ICard from "../shared/interfaces/ICard";
 import CardView from "./card/cardView";
 import ModalContent from "./modal/modalContent";
+
+const bookStoreAppModalContent: IProjectContent[] = [
+  {
+    title: "BookStoreApp",
+    description: (
+      <>
+          <p>
+            The Basic Book Store App is a web application that displays book recommendations.
+          </p>
+          <p>
+            Users can browse through existing book lists and create their own recommendations.
+          </p>
+          <p>
+          The app simplifies the process of sharing top book picks with friends and family, eliminating the need to respond to individual requests.
+          </p>
+          <Link className="link-opacity-50-hover" href="https://github.com/LukeASB/BookStoreApp">https://github.com/LukeASB/BookStoreApp</Link>
+      </>
+    )
+  },
+];
 
 // May separate these into another view.
 const sideProjects: ICard[] = [
@@ -19,27 +40,25 @@ const sideProjects: ICard[] = [
           <p>
             Numerous support, process/performance improvements, small/large scale project changes to add functionality to various countries in the Site Services' Team. Some of these projects include:
           </p>
+
           {/* {bet365UPUIModalCOntent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)} */}
         </div>
       ),
     },
   },
   {
-    title: "BookStore App",
+    title: "BookStoreApp",
     startDate: "2023",
     endDate: "Ongoing",
     img: "https://via.placeholder.com/400",
     shortDescription: "",
     readMoreModal: {
       id: "bookstoreapp",
-      title: "BookStore App",
+      title: "BookStoreApp",
       body: (
         <div>
-          <p><strong>Tech Stack: </strong>TypeScript/JavaScript, Golang, C#, and SQL.</p>
-          <p>
-            Numerous support, process/performance improvements, small/large scale project changes to add functionality to various countries in the Site Services' Team. Some of these projects include:
-          </p>
-          {/* {bet365UPUIModalCOntent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)} */}
+          <p><strong>Tech Stack: </strong>Backend: Golang Web Service, MongoDB. Frontend: ReactJS Framework created with with Nextjs and TypeScript</p>
+          {bookStoreAppModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
         </div>
       ),
     },

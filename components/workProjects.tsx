@@ -3,7 +3,7 @@ import CardView from "./card/cardView";
 import ModalContent from "./modal/modalContent";
 
 
-const bet365UPUIModalCOntent: IProjectContent[] = [
+const bet365UPUIModalContent: IProjectContent[] = [
   {
     title: "Version 9 Dark Mode",
     description: (
@@ -385,7 +385,7 @@ const workProjects: ICard[] = [
           <p>
             Numerous support, process/performance improvements, small/large scale project changes to add functionality to various countries in the Site Services' Team. Some of these projects include:
           </p>
-          {bet365UPUIModalCOntent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
+          {bet365UPUIModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
         </div>
       ),
     },
@@ -503,7 +503,7 @@ const sideProjects: ICard[] = [
           <p>
             Numerous support, process/performance improvements, small/large scale project changes to add functionality to various countries in the Site Services' Team. Some of these projects include:
           </p>
-          {bet365UPUIModalCOntent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
+          {bet365UPUIModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
         </div>
       ),
     },
