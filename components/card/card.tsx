@@ -11,7 +11,7 @@ const Card: React.FC<ICard> = (card: ICard) => {
             <h5 className="card-title">{card.title}</h5>
           </div>
           
-          <p className="text small">{`${card.startDate}-${card.endDate}`}</p>
+          <p className="text small">{card.endDate ? `${card.startDate}-${card.endDate}` : card.startDate}</p>
           <button
             type="button"
             className="btn btn-primary btn-custom robo popup-trigger popmake-680"

@@ -1,20 +1,10 @@
 import React from "react";
+import IPagination from "../shared/interfaces/IPagination";
 
-// Move me to Interfaces
-interface IPagination {
+const Pagination: React.FC<IPagination> = ({totalPosts, postsPerPage, setCurrentPage }: {
   totalPosts: number;
   postsPerPage: number;
-  setCurrentPage: Function;
-}
-
-const Pagination: React.FC<IPagination> = ({
-  totalPosts,
-  postsPerPage,
-  setCurrentPage,
-}: {
-  totalPosts: number;
-  postsPerPage: number;
-  setCurrentPage: Function;
+  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 }) => {
   let pages = [];
 
@@ -25,20 +15,19 @@ const Pagination: React.FC<IPagination> = ({
   return (
     <div className="pagination">
       <div className="container">
-        <div className="row justify-content-center mt-4">
+        <div className="row justify-content-center align-items-center">
           <div className={`col-${Math.ceil(totalPosts / postsPerPage)}`}>
             <nav aria-label="pagination">
               <ul className="pagination">
                 {pages.map((page, i) => {
                   return (
                     <li className="page-item" key={i}>
-                      <a
-                        className="page-link"
-                        href="#"
-                        onClick={() => setCurrentPage(page)}
+                      <button
+                      className="page-link"
+                      onClick={() => setCurrentPage(page)}
                       >
                         {page}
-                      </a>
+                      </button>
                     </li>
                   );
                 })}

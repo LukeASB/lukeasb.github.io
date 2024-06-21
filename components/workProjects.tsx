@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
 import ICard from "../shared/interfaces/ICard";
 import CardView from "./card/cardView";
 import ModalContent from "./modal/modalContent";
+import Pagination from "./pagination";
 
 
 const bet365UPUIModalContent: IProjectContent[] = [
@@ -486,38 +488,28 @@ const workProjects: ICard[] = [
   },
 ];
 
-// May separate these into another view.
-const sideProjects: ICard[] = [
-  {
-    title: "BookStore App",
-    startDate: "2023",
-    endDate: "Ongoing",
-    img: "https://via.placeholder.com/400",
-    shortDescription: "",
-    readMoreModal: {
-      id: "bet365upui",
-      title: "bet365 Projects",
-      body: (
-        <div>
-          <p><strong>Tech Stack: </strong>TypeScript/JavaScript, Golang, C#, and SQL.</p>
-          <p>
-            Numerous support, process/performance improvements, small/large scale project changes to add functionality to various countries in the Site Services' Team. Some of these projects include:
-          </p>
-          {bet365UPUIModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
-        </div>
-      ),
-    },
-  },
-];
-
 const WorkProjects: React.FC = () => {
+  const [ items, setItems ] = useState<ICard[]>([]);
+  const [ currentPage, setCurrentPage ] = useState(1);
+  const [ postPerPage, setPostPerPage] = useState(3);
+  const lastPostIndex = currentPage * postPerPage;
+  const firstPostIndex = lastPostIndex - postPerPage;
+  const currentPosts: ICard[] = items.slice(firstPostIndex, lastPostIndex);
+
+  useEffect(() => {
+    const getItems = () => setItems(workProjects);
+    getItems();
+  }, []);
+
+
   return (
-    <div id="project">
+    <div id="workProject">
       <section className="container my-3 pb-3 sectionMinHeight text-light">
         <div className="row text-center pb-3">
           <h1>Work Projects</h1>
         </div>
-        <CardView project={workProjects}/>
+        <CardView project={currentPosts}/>
+        { items.length > 0 && <Pagination totalPosts={items.length} postsPerPage={postPerPage} setCurrentPage={setCurrentPage}/>}
       </section>
     </div>
   );
