@@ -5,6 +5,9 @@ import ModalContent from "./modal/modalContent";
 
 import { useEffect, useState } from "react";
 import Pagination from "./pagination";
+import getPlaceholderImg from "../shared/helpers/getPlaceholderImg";
+
+const placeholderImg = getPlaceholderImg();
 
 const lukeLiftsModalContent: IProjectContent[] = [
   {
@@ -65,7 +68,7 @@ const sideProjects: ICard[] = [
     title: "LukeLifts",
     startDate: "2024",
     endDate: "",
-    img: "https://via.placeholder.com/400",
+    img: placeholderImg,
     shortDescription: "",
     readMoreModal: {
       id: "lukelifts",
@@ -82,7 +85,7 @@ const sideProjects: ICard[] = [
     title: "BookStoreApp",
     startDate: "2023",
     endDate: "",
-    img: "https://via.placeholder.com/400",
+    img: placeholderImg,
     shortDescription: "",
     readMoreModal: {
       id: "bookstoreapp",
@@ -99,7 +102,7 @@ const sideProjects: ICard[] = [
     title: "Finanical Ticker",
     startDate: "2023",
     endDate: "",
-    img: "https://via.placeholder.com/400",
+    img: placeholderImg,
     shortDescription: "",
     readMoreModal: {
       id: "financialtickergrid",

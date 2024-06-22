@@ -3,8 +3,9 @@ import ICard from "../shared/interfaces/ICard";
 import CardView from "./card/cardView";
 import ModalContent from "./modal/modalContent";
 import Pagination from "./pagination";
+import getPlaceholderImg from "../shared/helpers/getPlaceholderImg";
 
-
+const placeholderImg = getPlaceholderImg();
 const bet365UPUIModalContent: IProjectContent[] = [
   {
     title: "Version 9 Dark Mode",
@@ -376,7 +377,7 @@ const workProjects: ICard[] = [
     title: "bet365 - UPUI",
     startDate: "2023",
     endDate: "Ongoing",
-    img: "https://via.placeholder.com/400",
+    img: placeholderImg,
     shortDescription: "",
     readMoreModal: {
       id: "bet365upui",
@@ -396,7 +397,7 @@ const workProjects: ICard[] = [
     title: "RedEye",
     startDate: "2021",
     endDate: "2023",
-    img: "https://via.placeholder.com/400",
+    img: placeholderImg,
     shortDescription: "short",
     readMoreModal: {
       id: "redeye",
@@ -415,7 +416,7 @@ const workProjects: ICard[] = [
     title: "bet365 - MBO",
     startDate: "2019",
     endDate: "2021",
-    img: "https://via.placeholder.com/400",
+    img: placeholderImg,
     shortDescription: "",
     readMoreModal: { 
       id: "bet365mbo",
@@ -435,7 +436,7 @@ const workProjects: ICard[] = [
     title: "Capula",
     startDate: "2018",
     endDate: "2019",
-    img: "https://via.placeholder.com/400",
+    img: placeholderImg,
     shortDescription: "",
     readMoreModal: {
       id: "capula",
@@ -453,7 +454,7 @@ const workProjects: ICard[] = [
     title: "KeeleSU",
     startDate: "2017",
     endDate: "2018",
-    img: "https://via.placeholder.com/400",
+    img: placeholderImg,
     shortDescription: "",
     readMoreModal: {
       id: "keelesu",
@@ -471,7 +472,7 @@ const workProjects: ICard[] = [
     title: "Uni Projects",
     startDate: "2015",
     endDate: "2018",
-    img: "https://via.placeholder.com/400",
+    img: placeholderImg,
     shortDescription: "",
     readMoreModal: {
       id: "universityprojects",
