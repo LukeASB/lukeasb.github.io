@@ -13,10 +13,10 @@ const Pagination: React.FC<IPagination> = ({totalPosts, postsPerPage, setCurrent
   }
 
   return (
-    <div className="pagination">
+    <div id="pagination">
       <div className="container">
-        <div className="row justify-content-center align-items-center">
-          <div className={`col-${Math.ceil(totalPosts / postsPerPage)}`}>
+        <div className="row d-flex justify-content-center">
+          <div className="col-12 d-flex justify-content-center">
             <nav aria-label="pagination">
               <ul className="pagination">
                 {pages.map((page, i) => {

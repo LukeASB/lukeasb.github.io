@@ -4,7 +4,7 @@ import Card from "./card";
 const CardView: React.FC<ICardView> = ({ project }) => {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row d-flex justify-content-center">
         {project.map((item, i) => (
           <Card
             key={`${item.title}_${i}`}

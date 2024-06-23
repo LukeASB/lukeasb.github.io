@@ -82,7 +82,7 @@ const sideProjects: ICard[] = [
     },
   },
   {
-    title: "BookStoreApp",
+    title: "Book Store App",
     startDate: "2023",
     endDate: "",
     img: placeholderImg,
