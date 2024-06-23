@@ -115,7 +115,7 @@ const entries: IEntry[] = [
 const Employment: React.FC = () => {
   return (
     <div id="employment">
-      <section className="container my-3 pb-3 sectionMinHeight sectionBorder text-light">
+      <section className="container my-3 pb-3 sectionMinHeight sectionBorder text-dark">
         <div className="row text-center pb-3">
           <h1>Employment</h1>
         </div>

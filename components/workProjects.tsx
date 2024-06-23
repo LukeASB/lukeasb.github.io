@@ -506,7 +506,7 @@ const WorkProjects: React.FC = () => {
 
   return (
     <div id="workProject">
-      <section className="container my-3 pb-3 sectionMinHeight text-light">
+      <section className="container my-3 pb-3 sectionMinHeight text-dark">
         <div className="row text-center pb-3">
           <h1>Work Projects</h1>
         </div>

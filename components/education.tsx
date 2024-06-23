@@ -75,7 +75,7 @@ const entries: IEntry[] = [
 const Education: React.FC = () => {
   return (
     <div id="education">
-      <section className="container my-3 pb-3 sectionMinHeight sectionBorder text-light">
+      <section className="container my-3 pb-3 sectionMinHeight sectionBorder text-dark">
         <div className="row text-center pb-3">
           <h1>Education</h1>
         </div>

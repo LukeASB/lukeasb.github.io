@@ -4,7 +4,7 @@ import Social from "./socials";
 const About: React.FC = () => {
   return (
     <div id="about">
-      <section className="container my-3 pb-3 sectionMinHeight text-light">
+      <section className="container my-3 pb-3 sectionMinHeight text-dark">
         <div className="row align-items-center">
           <div className="col-md-8 align-self-start">
             <h1>Luke Sloane-Bulger</h1>
@@ -27,7 +27,7 @@ const About: React.FC = () => {
               style={{ width: "150px", height: "150px" }}
             />
             <div className="container pt-3">
-              <Social />
+              <Social colour="dark"/>
             </div>
           </div>
         </div>
