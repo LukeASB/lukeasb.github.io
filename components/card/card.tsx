@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ICard from "../../shared/interfaces/ICard";
 import Modal from "../modal/modal";
+import Image from "next/image";
 
 const Card: React.FC<ICard> = (card: ICard) => {
   const [cardStyle, setCardStyle] = useState({ minHeight: '200px' });

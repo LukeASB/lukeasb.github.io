@@ -490,9 +490,10 @@ const workProjects: ICard[] = [
 ];
 
 const WorkProjects: React.FC = () => {
+  const maxPostPerPage = 4;
   const [ items, setItems ] = useState<ICard[]>([]);
   const [ currentPage, setCurrentPage ] = useState(1);
-  const [ postPerPage, setPostPerPage] = useState(4);
+  const [ postPerPage, setPostPerPage] = useState(maxPostPerPage);
   const lastPostIndex = currentPage * postPerPage;
   const firstPostIndex = lastPostIndex - postPerPage;
   const currentPosts: ICard[] = items.slice(firstPostIndex, lastPostIndex);
@@ -510,7 +511,7 @@ const WorkProjects: React.FC = () => {
           <h1>Work Projects</h1>
         </div>
         <CardView project={currentPosts}/>
-        { items.length > 0 && <Pagination totalPosts={items.length} postsPerPage={postPerPage} setCurrentPage={setCurrentPage}/>}
+        { items.length > maxPostPerPage && <Pagination totalPosts={items.length} postsPerPage={postPerPage} setCurrentPage={setCurrentPage}/>}
       </section>
     </div>
   );

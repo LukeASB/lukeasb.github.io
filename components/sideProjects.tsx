@@ -9,6 +9,20 @@ import getPlaceholderImg from "../shared/helpers/getPlaceholderImg";
 
 const placeholderImg = getPlaceholderImg();
 
+const lukeWebPortfolioModalContent: IProjectContent[] = [
+  {
+    title: "Web Portfolio",
+    description: (
+      <>
+        <p>
+          Web Portfolio for this site.
+        </p>
+        <Link className="link-opacity-50-hover" href="https://github.com/LukeASB/lukeasb.github.io">https://github.com/LukeASB/lukeasb.github.io</Link>
+      </>
+    )
+  }
+];
+
 const lukeLiftsModalContent: IProjectContent[] = [
   {
     title: "LukeLifts",
@@ -65,6 +79,23 @@ const financialTickerGridModalContent: IProjectContent[] = [
 
 const sideProjects: ICard[] = [
   {
+    title: "Web Portfolio",
+    startDate: "2024",
+    endDate: "",
+    img: placeholderImg,
+    shortDescription: "",
+    readMoreModal: {
+      id: "lukesbwebportfolio",
+      title: "Web Portfolio",
+      body: (
+        <div>
+          <p><strong>Tech Stack: </strong>TypeScript (Next.js, React.js)</p>
+          {lukeWebPortfolioModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
+        </div>
+      ),
+    },
+  },
+  {
     title: "LukeLifts",
     startDate: "2024",
     endDate: "",
@@ -118,9 +149,10 @@ const sideProjects: ICard[] = [
 ];
 
 const SideProjects: React.FC = () => {
+  const maxPostPerPage = 4;
   const [ items, setItems ] = useState<ICard[]>([]);
   const [ currentPage, setCurrentPage ] = useState(1);
-  const [ postPerPage, setPostPerPage] = useState(8);
+  const [ postPerPage, setPostPerPage] = useState(maxPostPerPage);
   const lastPostIndex = currentPage * postPerPage;
   const firstPostIndex = lastPostIndex - postPerPage;
   const currentPosts: ICard[] = items.slice(firstPostIndex, lastPostIndex);
@@ -137,7 +169,7 @@ const SideProjects: React.FC = () => {
           <h1>Side Projects</h1>
         </div>
         <CardView project={currentPosts}/>
-        { items.length > 0 && <Pagination totalPosts={items.length} postsPerPage={postPerPage} setCurrentPage={setCurrentPage}/>}
+        { items.length > maxPostPerPage && <Pagination totalPosts={items.length} postsPerPage={postPerPage} setCurrentPage={setCurrentPage}/>}
       </section>
     </div>
   );
