@@ -10,7 +10,7 @@ const About: React.FC = () => {
             <h1>Luke Sloane-Bulger</h1>
             <p>Hello,</p>
             <p>
-              I'm Luke Sloane-Bulger, I'm a Software Engineer with{" "}
+              I'm Luke Sloane-Bulger, I'm a Full-Stack Software Engineer with{" "}
               {automatedDate("2018-02-01")} years of full-time experience.
             </p>
             <p>I'm a BSc Computer Science Graduate from Keele University.</p>
