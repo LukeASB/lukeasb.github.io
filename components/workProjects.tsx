@@ -14,7 +14,7 @@ const bet365UPUIModalContent: IProjectContent[] = [
         <p>
           Upgraded the bet365 websites join form and first deposit payment
           forms to their latest version for each country the company supplies
-          its product to.
+          its product to. This was based on the requirements from Product and the templates from the Design team.
         </p>
       </>
     )
@@ -59,13 +59,13 @@ const redeyeModalContent: IProjectContent[] = [
     description: (
       <>
           <p>
-            Worked in a team to implement a Web Push feature on the application
+            Worked in a small team to implement a Web Push feature on the application
             for clients to dynamically send notifications to users that
-            subscribe for notifications.
+            subscribe.
           </p>
           <p>The Web Push Service was made to power this feature that was built with Node.js (TypeScript, Express.js framework), and OracleSQL database.</p>
           <p>
-            Added administration panel for client to add their VAPID Keys.
+            Added an administration panel for client to add their VAPID Keys to RedEye's Marketing Automation app.
             Assisted with implementation of a Web Push Service to dynamically
             push messages to clients' users.
           </p>
@@ -112,8 +112,8 @@ const redeyeModalContent: IProjectContent[] = [
     description: (
       <>
           <p>
-            Added functionality to add Email Builder folder feature to store
-            clients' email templates on RedEye's Marketing Automation app.
+            Added functionality to the existing Asset Manager app to add an Email Builder folder feature to store
+            clients' saved custom email templates on RedEye's Marketing Automation app for clients to access their assets in one centralised location..
           </p>
       </>
     )
@@ -129,7 +129,7 @@ const redeyeModalContent: IProjectContent[] = [
         </p>
         <p>
           Implemented an API built in PHP that tracks the board every minute. If there's
-          changes communicates with Slack Bot to display a notification to the
+          changes the Slack Bot is alerted to display a notification to the
           team's Slack channel.
         </p>
         <p>The tech stack for this was: PHP, Microsoft Graph API, MongoDB, Gauge/Taiko Node.js app (Used to call the SE Planner Bot endpoint, and to automate the need to login to Microsoft), Slack Bot, Cron Job, Docker.</p>
@@ -144,7 +144,13 @@ const bet365MBOModalContent: IProjectContent[] = [
     description: (
       <>
         <p>
-          Extended originally Apple Pay Deposit/Withdrawal implementation to retrieve the card number from the users Apple Pay Wallet that previously wasn’t possible. This allowed for duplicate payment details checks to be added, and the ability to add a withdrawal process back to the user’s Apply Pay card. Apple Pay previously could only be used on bet365 iOS App, extended this to the browser on supported devices/operating systems.
+          Extended on the original Apple Pay implementation to retreive the user's Apple Pay Card Number that previously wasn't exposed.
+        </p>
+        <p>
+          This allowed for duplicate payment details checks to be added, and the ability to add a withdrawal process back to the user’s Apply Pay card. Implemented the Apple Pay Withdrawal details in each of the administration apps.
+        </p>
+        <p>
+          Apple Pay previously could only be used on bet365 iOS App, extended this to the browser on supported devices/operating systems.
         </p>
       </>
     )
@@ -154,7 +160,7 @@ const bet365MBOModalContent: IProjectContent[] = [
     description: (
       <>
         <p>
-          Updated applications to export files to new xlsx format to support Microsoft Excel 2016 compatiablility.
+          Updated adminstration applications to export files to new xlsx format to support Microsoft Excel 2016 compatiablility.
         </p>
       </>
     )
@@ -164,7 +170,7 @@ const bet365MBOModalContent: IProjectContent[] = [
     description: (
       <>
         <p>
-          Modified all team’s supported applications for Germany regulation changes to handle new user deposit limits and responsible gambling requirements.
+          Modified all administration applications for the  German regulation changes to handle new user deposit limits and responsible gambling requirements.
         </p>
       </>
     )
@@ -174,7 +180,13 @@ const bet365MBOModalContent: IProjectContent[] = [
     description: (
       <>
         <p>
-          Added new status reasons, new custom checks to support the requirement to add daily deposit limits, daily time logged in limits and a responsible gambling check on account creation. Modified Dormant Account Service checks to include Deposit Limit changes and to change the timescale an account is marked is dormant and deleted. Modifed administration applications to handle new changes.
+          Added new status reasons, new custom checks to support the requirement to add daily deposit limits, daily time logged in limits and a responsible gambling check on account creation.
+        </p>
+        <p>
+          Modified Dormant Account Service checks to include Deposit Limit changes and to change the timescale an account is marked is dormant and deleted. 
+        </p>
+        <p>
+          Modifed administration applications to handle new changes.
         </p>
       </>
     )
@@ -184,7 +196,7 @@ const bet365MBOModalContent: IProjectContent[] = [
     description: (
       <>
         <p>
-          Add functionality to existing application to manipulate behaviour based on user statuses.
+          Added functionality to existing application to manipulate behaviour based on user statuses.
         </p>
       </>
     )
@@ -197,13 +209,16 @@ const capulaModalContent: IProjectContent[] = [
     description: (
       <>
         <p>
-          Worked in a team-based environment to produce a Data Centre that's
-          deesigned to contain/process a high quantity of image files for the
-          clients' legacy security system. This project used VMWare, ESXi, vSphere to store virtual machines, Active Directory Domain Services to 
-          store user details to access isolated domain remains, Group Policy to lock down the secure workstation, and implemented 2FA on the workstations.
+          Worked on a project to produce a Data Centre that's
+          designed to contain/process a high quantity of image files for the
+          clients' legacy security system.
         </p>
         <p>
-          To automate the workstation builts provided Powershell ISE and Batch File Scripts to automate installations and features to lockdown/secure workstations.
+          This project used VMWare, ESXi, vSphere to store the virtual machines, Active Directory Domain Services to 
+          store user details to access the isolated domain, Group Policy to lock down the secure workstations which were protected with 2FA.
+        </p>
+        <p>
+          To automate the workstation builds I provided Powershell ISE and Batch File Scripts to automate installations and features to lockdown/secure workstations.
         </p>
         <p>
           Alongside this aided in producing an application built with C# .Net Framework and SQL used by the
@@ -245,8 +260,8 @@ const uniModalContent: IProjectContent[] = [
     description: (
       <>
         <p>
-          During the course of my Dissertation, I aimed to find a potential
-          answer for improving the current conflict between usability and
+          My Dissertation aimed to find a potential
+          answer for improving the conflict between usability and
           security on E-Commerce websites. At the cost of heightened security,
           usability and functionality will suffer and vice versa.
         </p>
@@ -297,12 +312,12 @@ const uniModalContent: IProjectContent[] = [
     description: (
       <>
         <p>
-          This is a responsive website with a specific range of functionality
-          to meet requirements and is based on a product of choice. In my
+          Created a responsive website with a specific range of functionality
+          to meet requirements and constraints based on a product of choice. In my
           coursework, I chose to do a sport I like, which is Judo. This
           website uses HTML, CSS, JavaScript and PHP.
         </p>
-        <p>Tech Stack: JavaScript, HTML, CSS</p>
+        <p>Tech Stack: PHP, JavaScript, HTML, CSS</p>
       </>
     )
   },
@@ -406,7 +421,7 @@ const workProjects: ICard[] = [
         <div>
           <p><strong>Tech Stack: </strong>JavaScript, TypeScript, NodeJS, ReactJS, PHP, SQL and MongoDB. Used
           Microsoft Azure and Docker.</p>
-          <p>Worked on a number of small/large projects during my time at RedEye. Some of which include:</p>
+          <p>Worked on a number of small/large projects. Some of which include:</p>
           {redeyeModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content}/>)}
         </div>
       ),
@@ -425,7 +440,7 @@ const workProjects: ICard[] = [
         <>
           <p><strong>Tech Stack: </strong>C# .Net Framework .Net Core, VB.NET, SQL.</p>
           <p>
-            Numerous support, process/performance improvements, small/large scale project changes to add functionality to various countries for the business’ account, administration and verification tools to for multiple countries that the business supports. Some of these projects include:
+            Numerous support, process/performance improvements, small/large scale project changes to add functionality to various countries for the business’ account, administration and verification tools for multiple countries that the business supports. Some of these projects include:
           </p>
           {bet365MBOModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
         </>
@@ -444,7 +459,7 @@ const workProjects: ICard[] = [
       body: (
         <>
           <p><strong>Tech Stack: </strong>C# .Net Framework, SQL, VMware, ESXi, Group Policy, Powershell ISE Script.</p>
-          <p>Worked on a number of small/large projects during my time at Capula Ltd. Most notable was:</p>
+          <p>Worked on a number of small/large projects. Most notable was:</p>
           {capulaModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
         </>
       ),
@@ -462,7 +477,7 @@ const workProjects: ICard[] = [
       body: (
         <div>
           <p><strong>Tech Stack: </strong>HTML(5), CSS, JavaScript and PHP.</p>
-          <p>Worked on a number of small/large projects during my time at KeeleSU:</p>
+          <p>Worked on a number of small/large projects:</p>
           {keelesuModalContent.map((content, i) => <ModalContent key={`${content}_${i}`} content={content} />)}
         </div>
       ),

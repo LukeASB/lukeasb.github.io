@@ -13,7 +13,7 @@ const About: React.FC = () => {
               I'm Luke Sloane-Bulger, I'm a Software Engineer with{" "}
               {automatedDate("2018-02-01")} years of full-time experience.
             </p>
-            <p>I'm BSc Computer Science Graduate from Keele University.</p>
+            <p>I'm a BSc Computer Science Graduate from Keele University.</p>
             <p>
               Outside of work, I have a passion for strength training and
               sports.

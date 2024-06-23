@@ -53,7 +53,7 @@ const entries: IEntry[] = [
     ),
   },
   {
-    title: "Capula Ltd | Graduate Software Engineer - Nuclear Department",
+    title: "Capula Ltd | Graduate Engineer - Nuclear Department",
     date: "Jun 2018-Aug 2019",
     description: (
       <>

@@ -9,14 +9,27 @@ const Card: React.FC<ICard> = (card: ICard) => {
 
   useEffect(() => {
     const handleResize = () => {
+      if (window.matchMedia('(max-width: 1430px)').matches) {
+        console.log("1400");
+        setCardStyle({ minHeight: '200px' });
+        setCardTitle({ minHeight: '10px' });
+      }
+
       if (window.matchMedia('(max-width: 1400px)').matches) {
+        console.log("1400");
         setCardStyle({ minHeight: '200px' });
         setCardTitle({ minHeight: '55px' });
       }
 
       if (window.matchMedia('(max-width: 990px)').matches) {
+        console.log("990");
         setCardStyle({ minHeight: '270px' });
         setCardTitle({ minHeight: '75px' });
+      }
+
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        console.log("767");
+        setCardTitle({ minHeight: '10px' });
       }
     };
 
