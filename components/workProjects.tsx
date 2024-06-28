@@ -386,7 +386,6 @@ const uniModalContent: IProjectContent[] = [
   }
 ];
 
-
 const workProjects: ICard[] = [
   {
     title: "bet365 - UPUI",
