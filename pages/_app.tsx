@@ -5,7 +5,6 @@ import { AppProps } from "next/app";
 import { useEffect } from "react";
 import Script from "next/script";
 
-// https://www.youtube.com/watch?v=nded252qxcA
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
