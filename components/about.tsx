@@ -1,4 +1,3 @@
-import automatedDate from "../shared/helpers/automatedDate";
 import Social from "./socials";
 
 const About: React.FC = () => {
@@ -10,12 +9,20 @@ const About: React.FC = () => {
             <h1>Luke Sloane-Bulger</h1>
             <p>Hello,</p>
             <p>
-              I'm Luke Sloane-Bulger, I'm a Full-Stack Software Engineer with{" "}
-              {automatedDate("2018-02-01")} years of full-time experience.
+              I’m Luke, a Full-Stack Software Engineer with 5+ years of
+              experience and a BSc Computer Science Graduate from Keele
+              University.
             </p>
-            <p>I'm a BSc Computer Science Graduate from Keele University.</p>
             <p>
-              Outside of work, I have a passion for strength training and
+              Skilled in Golang, TypeScript/React/Node.js, C#, SQL, NoSQL
+              (MongoDB, Riak) and cloud infrastructure (AWS, GCP, Docker).
+              Experienced in building high-throughput APIs and real-time
+              systems, delivering secure, maintainable code within
+              cross-functional teams. Passionate about creating reliable
+              products that solve real-world problems at scale.
+            </p>
+            <p>
+              Outside of coding, I have a passion for strength training and
               sports.
             </p>
           </div>

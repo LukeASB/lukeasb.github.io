@@ -1,3 +1,4 @@
+import Link from "next/link";
 import IEntry from "../shared/interfaces/IEntry";
 import Entry from "./entry";
 
@@ -11,10 +12,7 @@ const entries: IEntry[] = [
         <p>The scope of modules I studied whilst completing my degree:</p>
         <ul>
           <li>Cybercrime</li>
-          <li>
-            Programming, Programming II and Advanced Programming Practices
-            (Java)
-          </li>
+          <li>Programming, Programming II and Advanced Programming (Java)</li>
           <li>Information Systems, Advanced Information Systems</li>
           <li>Computational Intelligence, Computational Intelligence II</li>
           <li>Machine Learning</li>
@@ -46,6 +44,20 @@ const entries: IEntry[] = [
           <li>Project Management, Business Planning</li>
           <li>System Analysis & Design</li>
         </ul>
+      </>
+    ),
+  },
+  {
+    title: "Level 3 Award in Leadership & Management (8600-11)",
+    date: "Jul 2023",
+    description: (
+      <>
+        <Link
+          className="link-opacity-50-hover"
+          href="https://www.credly.com/badges/7937f94e-7cc8-4e1f-8437-13363ae1dfb6/linked_in_profile"
+        >
+          Level 3 Award in Leadership & Management (8600-11)
+        </Link>
       </>
     ),
   },
