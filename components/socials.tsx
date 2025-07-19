@@ -1,5 +1,5 @@
 interface ISocial {
-  colour: string
+  colour: string;
 }
 const Social: React.FC<ISocial> = ({ colour }) => {
   return (

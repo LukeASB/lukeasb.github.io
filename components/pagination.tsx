@@ -1,7 +1,11 @@
 import React from "react";
 import IPagination from "../shared/interfaces/IPagination";
 
-const Pagination: React.FC<IPagination> = ({totalPosts, postsPerPage, setCurrentPage }: {
+const Pagination: React.FC<IPagination> = ({
+  totalPosts,
+  postsPerPage,
+  setCurrentPage,
+}: {
   totalPosts: number;
   postsPerPage: number;
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
@@ -23,8 +27,8 @@ const Pagination: React.FC<IPagination> = ({totalPosts, postsPerPage, setCurrent
                   return (
                     <li className="page-item" key={i}>
                       <button
-                      className="page-link"
-                      onClick={() => setCurrentPage(page)}
+                        className="page-link"
+                        onClick={() => setCurrentPage(page)}
                       >
                         {page}
                       </button>

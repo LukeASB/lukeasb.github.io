@@ -27,7 +27,7 @@ const About: React.FC = () => {
               style={{ width: "150px", height: "150px" }}
             />
             <div className="container pt-3">
-              <Social colour="dark"/>
+              <Social colour="dark" />
             </div>
           </div>
         </div>

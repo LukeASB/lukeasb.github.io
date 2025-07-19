@@ -3,19 +3,22 @@ import Entry from "./entry";
 
 const entries: IEntry[] = [
   {
-    title: "bet365 | Software Developer - User Platform User Interface (UPUI)",
+    title: "bet365 | Software Developer - Accounts & Authentication Management",
     date: "Oct 2023-Ongoing",
     description: (
       <>
         <p>
-          Full-Stack Software Developer. Tasked with debugging and providing
-          fixes for the company's various applications/services using
-          TypeScript/JavaScript, Golang, C#, and SQL in the Site Services team.
+          Develop and maintain features on the company’s products and services —
+          extend and build robust APIs for account registration, sign-in/out and
+          account recovery using Golang, C#, TypeScript, React, SQL, Riak and
+          Docker.
         </p>
         <p>
-          Worked on projects to add new functionality to the existing web
-          application and APIs.
+          Designed and delivered a Prove Prefill feature, enabling frictionless
+          account registration for US users.
         </p>
+        <p>Use AI tools (RooAI, Cody) to boost daily productivity.</p>
+        <p>Mentor and help junior developers to strengthen team performance.</p>
       </>
     ),
   },
@@ -25,16 +28,19 @@ const entries: IEntry[] = [
     description: (
       <>
         <p>
-          Full-Stack Software Developer. Tasked with debugging and providing
-          fixes for the company's various applications/services using
-          JavaScript, TypeScript, NodeJS, ReactJS, PHP, SQL and MongoDB. Used
-          Microsoft Azure and Docker.
+          Developed and maintained features on the company’s products and
+          services to drive client success on the Marketing Platform using
+          JavaScript, TypeScript, NodeJS, React, PHP, Kafka, Docker, SQL and
+          MongoDB.
         </p>
         <p>
-          {" "}
-          Worked on projects to add new functionality to the existing web
-          application, and worked on services to provide automation.
+          Extended and built APIs, including a Custom Fonts API and a new Web
+          Push Notifications System.
         </p>
+        <p>
+          Created automation tools and Slack bots to streamline team workflows.
+        </p>
+        <p>Mentor and help junior developers to strengthen team performance.</p>
       </>
     ),
   },
@@ -44,10 +50,8 @@ const entries: IEntry[] = [
     description: (
       <>
         <p>
-          Tasked with debugging and providing fixes for the company's various
-          applications/services using C#, VB.Net and SQL in the Member's Back
-          Office team. Worked on in-house projects to add new functionality to
-          existing applications.
+          Developed and maintained features for internal applications and
+          services using C#, VB.Net, and SQL.
         </p>
       </>
     ),
@@ -58,13 +62,9 @@ const entries: IEntry[] = [
     description: (
       <>
         <p>
-          Tasked with project work in a team-based environment to deliver
-          systems for highly-classified clients in accordance to their
-          functional/non-functional requirements.
-        </p>
-        <p>
-          Worked and developed two projects using VMware, ESXi, Group Policy,
-          Powershell ISE Script and C# in the company's Nuclear Department.
+          Contributed to secure systems for high-compliance clients in a small
+          team using C# and SQL. Gained experience in VMware, system and network
+          architecture.
         </p>
       </>
     ),
@@ -75,40 +75,17 @@ const entries: IEntry[] = [
     description: (
       <>
         <p>
-          Tasked with the redesign and development of the Student Unions’
-          website.
+          Redesigned and maintained the Keele Student Union website with
+          JavaScript and PHP.
         </p>
-        <p>
-          Tasked with deploying the Graduation E-Commerce Shop ready for
-          Graduation.
-        </p>
-        <p>Here I used wireframes, HTML(5), CSS, JavaScript and PHP.</p>
       </>
     ),
   },
   {
     title:
-      "Dimensions Leisure Centre / Fenton Manor - Lifeguard / Gym Assistant",
+      "Dimensions Leisure Centre/ Fenton Manor – Lifeguard & Gym Assistant",
     date: "Jun 2015-Jun 2019",
-    description: (
-      <>
-        <p>
-          Lifeguard - Worked in a team-based environment to survey/patrol
-          aquatic activities for any potential hazards/dangers to pool users.
-          Used First Aid skills and responded to any emergency events that
-          occured.
-        </p>
-        <p>
-          Gym Assistant - Used Personal Trainer Level 3 qualification to provide
-          health & fitness advice to clients.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "Waterworld & M-Club - Lifeguard",
-    date: "Jun 2012-Jun 2015",
-    description: <p></p>,
+    description: <></>,
   },
 ];
 
