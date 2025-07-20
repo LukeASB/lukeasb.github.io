@@ -62,7 +62,7 @@ const lukeLiftsModalContent: IProjectContent[] = [
     description: (
       <>
         <p>Personal Training Website that hosts my training products.</p>
-        <p>Transactions handled via Stripe</p>
+        <p>Transactions handled via Stripe.</p>
         <Link
           className="link-opacity-50-hover"
           href="https://github.com/LukeASB/LukeLiftsV2"
