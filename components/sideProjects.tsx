@@ -62,6 +62,7 @@ const lukeLiftsModalContent: IProjectContent[] = [
     description: (
       <>
         <p>Personal Training Website that hosts my training products.</p>
+        <p>Transactions handled via Stripe</p>
         <Link
           className="link-opacity-50-hover"
           href="https://github.com/LukeASB/LukeLiftsV2"
@@ -142,7 +143,8 @@ const sideProjects: ICard[] = [
       body: (
         <div>
           <p>
-            <strong>Tech Stack: </strong>TypeScript (Next.js, React), Golang
+            <strong>Tech Stack: </strong>TypeScript (Next.js, React), Golang,
+            MongoDB
           </p>
           {habitsAppModalContent.map((content, i) => (
             <ModalContent key={`${content}_${i}`} content={content} />
@@ -163,7 +165,7 @@ const sideProjects: ICard[] = [
       body: (
         <div>
           <p>
-            <strong>Tech Stack: </strong>TypeScript (Next.js, React.js)
+            <strong>Tech Stack: </strong>TypeScript (Next.js, React)
           </p>
           {lukeWebPortfolioModalContent.map((content, i) => (
             <ModalContent key={`${content}_${i}`} content={content} />
@@ -184,7 +186,7 @@ const sideProjects: ICard[] = [
       body: (
         <div>
           <p>
-            <strong>Tech Stack: </strong>TypeScript (Next.js, React.js)
+            <strong>Tech Stack: </strong>TypeScript (Next.js, React)
           </p>
           {lukeLiftsModalContent.map((content, i) => (
             <ModalContent key={`${content}_${i}`} content={content} />
@@ -205,9 +207,8 @@ const sideProjects: ICard[] = [
       body: (
         <div>
           <p>
-            <strong>Tech Stack: </strong>Backend: Golang Web Service, MongoDB.
-            Frontend: React.js Framework created with with Next.js and
-            TypeScript
+            <strong>Tech Stack: </strong>Golang, TypeScript (React, Next.js),
+            MongoDB.
           </p>
           {bookStoreAppModalContent.map((content, i) => (
             <ModalContent key={`${content}_${i}`} content={content} />
@@ -228,8 +229,8 @@ const sideProjects: ICard[] = [
       body: (
         <div>
           <p>
-            <strong>Tech Stack: </strong>Frontend: TypeScript, HTML, CSS.
-            Backend: Node.js (TypeScript, Express.js)
+            <strong>Tech Stack: </strong> Node.js (TypeScript, Express.js),
+            TypeScript, HTML, CSS.
           </p>
           {financialTickerGridModalContent.map((content, i) => (
             <ModalContent key={`${content}_${i}`} content={content} />
